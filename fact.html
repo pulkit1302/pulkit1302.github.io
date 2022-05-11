@@ -1,0 +1,22 @@
+<html>
+<body>
+<h1> Welcome to a Factorial Calculator </h1>
+Enter a number: <input id = "num">
+<br><br>
+<button onclick = "fact()"> Submit </button>
+<script>
+function fact()
+{
+var n, f=1,t ;
+n = document.getElementById("num").value;
+t=n;
+while(n>0)
+{
+f=f*n
+n--;
+}
+window.alert(" The factorial of the number " + t + " is: " + f);
+}
+</script>
+</body>
+</html>

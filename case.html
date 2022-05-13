@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1> Welcome to a Case Converter </h1>
+Enter text: <br><br><textarea id="txt" cols=40 rows=4> </textarea>
+<br><br>
+    <button onclick="Ucase()">UpperCase</button>
+    <button onclick="Lcase()">LowerCase</button>
+    <button onclick="Clear()">Clear</button>
+<script>
+function Ucase() {
+    let tx = document.getElementById('txt');
+    tx.value = tx.value.toUpperCase();
+    }
+function Lcase()
+{
+let tx = document.getElementById('txt');
+    tx.value = tx.value.toLowerCase();
+}
+function Clear()
+{
+document.getElementById('txt').value = ' ';
+}
+</script>
+</body>
+</html>

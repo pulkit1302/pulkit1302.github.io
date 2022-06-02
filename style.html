@@ -1,0 +1,36 @@
+<html>
+<head>
+<style>
+        a:hover {text-decoration: none;}
+</style>
+</head>
+<body>
+<p>Use Cascading Style sheets (CSS) to modify the following:<br>
+(a) Change background.<br>
+(b) Change font type, face and color.<br>
+(c) Align Text.<br>
+(d) Remove underlines from hyperlinks.</p>
+ <section>
+    <button type="button" onclick="background()">Change Background Color</button>
+    <button type="button" onclick="font()">Change Font attributes</button>
+    <button type="button" onclick="align()">Align Text Center</button>
+    <button type="button" ><a href = "#">Remove Underline</a></button>
+</section>
+<script>
+    function background() 
+   {
+        document.body.style.backgroundColor = "red";
+    }
+    function font() 
+   {
+         document.body.style.fontSize = "40px";
+         document.body.style.color = "yellow";
+         document.body.style.fontFamily = "Monotype Corsiva";
+    }
+    function align() {
+         document.body.style.textAlign = "center";
+    }
+    
+</script>
+</body>
+</html>

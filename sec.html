@@ -1,10 +1,10 @@
 <html>
 <head>
 <style>
-section {border : red solid thin;}
+section {border : pink solid thin; font-size:40px;}
 </style>
 </head>
-<body>
+<body background="23.jpeg" text=yellow>
 <section>
 <H1> My Hobbies List </H1>
 <button type="button"> Yoga </button> <br>
@@ -14,7 +14,7 @@ section {border : red solid thin;}
 <button type="button"> Calligraphy </button><br>
 <button type="button"> Watercolor painting </button><br>
 <button type="button"> Learning a new language </button><br>   
-  </section>
+</section>
 <section>
 <p id="mid"> </p>
 </section>
@@ -22,13 +22,15 @@ section {border : red solid thin;}
   <p> This is the last section which load the middle section</p>
 <button type="button" onclick="midle()"> Load Middle Section </button>
   </section>
+<section>
 <script>
 function midle()
 {
 document.getElementById("mid").innerHTML="This is the middle section";
-document.getElementById("mid").style.color='red';
-document.getElementById("mid").style.fontSize='40';
+document.getElementById("mid").style.color='white';
+document.getElementById("mid").style.fontSize='50px';
 }
 </script>
+</section>
 </body>
 </html>

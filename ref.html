@@ -1,17 +1,22 @@
 <html>
+<head>
+<style>
+body {background-image:url("pattern5.jpg"); color:gold; font-size:30px;text-align:center}
+</style>
+</head>
 <body>
 <h2 align="center"> Program for Copying, passing, and comparing by value and reference</h2>
 <script>
     // Copying, passing, and comparing by value
-    let x = 50
+    let x = 60
     let y = x
-    x = 40
+    x = 30
     document.write('Copying, passing, and comparing by value Output: ' + y)
 
     // Copying, passing, and comparing by reference
-    x = {name: "pratham"}
+    x = {name: "pulkit"}
     y = x
-    x.name = "yash"
+    x.name = "Madanlal"
     document.write('<br>Copying, passing, and comparing by reference Output: ' + y.name)
 
     // References themselves are passed by value

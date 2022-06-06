@@ -33,7 +33,7 @@ def binarySearch(arr, k, low, high):
             low = mid + 1
         else:
             high = mid - 1
-    return -1
+            return -1
 arr = [1, 3, 5, 7, 9]
 k = 5
 result = binarySearch(arr, k, 0, len(arr)-1)
@@ -74,9 +74,10 @@ print("The Result in Ascending Order : ", a)
 <h3>Python Program for Insertion Sort</h3>
 <pre>
 def insertionSort(arr):
+   def insertionSort(arr):
    for i in range(1, len(arr)):
       key = arr[i]
-       j = i-1
+      j = i-1
       while j >=0 and key < arr[j] :
          arr[j+1] = arr[j]
          j -= 1
@@ -95,13 +96,12 @@ def FibRecursion(n):
        return n  
    else:  
        return(FibRecursion(n-1) + FibRecursion(n-2))  
- nterms = int(input("Enter the terms? ")) 
-  
+nterms = int(input("Enter the terms? ")) 
 if nterms <= 0:   
-   print("Please enter a positive integer")  
+    print("Please enter a positive integer")  
 else:  
-   print("Fibonacci sequence:")  
-   for i in range(nterms):  
+    print("Fibonacci sequence:")  
+for i in range(nterms):  
        print(FibRecursion(i))
 </pre>
 
